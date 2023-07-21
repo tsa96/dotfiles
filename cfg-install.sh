@@ -12,7 +12,7 @@ sudo apt-get install zsh
 git clone --recurse-submodules --bare https://github.com/tsa96/dotfiles.git "$HOME"/.cfg
 
 config() {
-	/usr/bin/git --git-dir="$HOME"/.cfg/ --work-tree="$HOME" "$@"
+	git --git-dir=~/.cfg/ --work-tree=~/ "$@"
 }
 
 mkdir -p .config-backup

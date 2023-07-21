@@ -1,5 +1,5 @@
 # This setup https://www.atlassian.com/git/tutorials/dotfiles
-alias config='git --git-dir=$HOME/.cfg/ --work-tree=$HOME/tom'
+alias config='git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 # Horrid hack to be able to use WT with -here
 if [ "$(pwd)" = '/c/Windows/System32' ]; then
@@ -27,4 +27,4 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 # Completion
 autoload -Uz compinit && compinit
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'alias config='git --git-dir=/c/Users/tom/.cfg/ --work-tree=/c/Users/tom'
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
