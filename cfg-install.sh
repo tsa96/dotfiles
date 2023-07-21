@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # To exec use:
-# curl -Lks https://raw.githubusercontent.com/tsa96/dotfiles/main/cfg-install.sh | /bin/sh`
+# curl -Lks https://raw.githubusercontent.com/tsa96/dotfiles/main/cfg-install.sh | /bin/sh
 
 # Based on https://www.atlassian.com/git/tutorials/dotfiles
 
@@ -12,7 +12,7 @@ sudo apt-get install zsh
 git clone --recurse-submodules --bare https://github.com/tsa96/dotfiles.git "$HOME"/.cfg
 
 config() {
-	git --git-dir=~/.cfg/ --work-tree=~/ "$@"
+	git --git-dir="$HOME"/.cfg/ --work-tree="$HOME"/ "$@"
 }
 
 mkdir -p .config-backup
