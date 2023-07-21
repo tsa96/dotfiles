@@ -10,7 +10,7 @@ rm cfg-install.sh # lol
 sudo apt-get install zsh
 
 git clone --bare https://github.com/tsa96/dotfiles.git "$HOME"/.cfg
-git clone https://github.com/romkatv/powerlevel10k "$HOME" # Hack, can't get submodules to work with this
+git clone https://github.com/romkatv/powerlevel10k "$HOME/powerlevel10k" # Hack, can't get submodules to work with this
 
 config() {
 	git --git-dir="$HOME"/.cfg/ --work-tree="$HOME"/ "$@"
