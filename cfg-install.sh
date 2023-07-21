@@ -5,6 +5,8 @@
 
 # Based on https://www.atlassian.com/git/tutorials/dotfiles
 
+rm cfg-install.sh # lol
+
 sudo apt-get install zsh
 
 git clone --recurse-submodules --bare https://github.com/tsa96/dotfiles.git "$HOME"/.cfg
