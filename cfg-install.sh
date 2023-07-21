@@ -9,7 +9,8 @@ rm cfg-install.sh # lol
 
 sudo apt-get install zsh
 
-git clone --recurse-submodules --bare https://github.com/tsa96/dotfiles.git "$HOME"/.cfg
+git clone --bare https://github.com/tsa96/dotfiles.git "$HOME"/.cfg
+git clone https://github.com/romkatv/powerlevel10k "$HOME" # Hack, can't get submodules to work with this
 
 config() {
 	git --git-dir="$HOME"/.cfg/ --work-tree="$HOME"/ "$@"
@@ -26,5 +27,4 @@ else
 fi
 
 config checkout
-config submodule update --recursive
 config config status.showUntrackedFiles no
