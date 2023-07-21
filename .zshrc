@@ -14,12 +14,14 @@ bindkey "^[[1;5D" backward-word
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+	source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
 # Aliases
 source ~/.zsh_aliases.zsh
-source ~/.zsh_aliases_private.zsh
+if [ -f ~/.zsh_aliases_private.zsh ]; then
+	source ~/.zsh_aliases_private.zsh
+fi
 
 # Theme - p10k submoduled
 source ~/powerlevel10k/powerlevel10k.zsh-theme
