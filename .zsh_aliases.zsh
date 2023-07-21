@@ -1,4 +1,4 @@
-# Bunch of shit from oh-my-zsh. I don't want to 
+# Bunch of shit from oh-my-zsh. I don't want to handle submoduling that shit
 alias -g ...='../..'
 alias -g ....='../../..'
 alias -g .....='../../../..'
