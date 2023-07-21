@@ -1,5 +1,5 @@
 # This setup https://www.atlassian.com/git/tutorials/dotfiles
-alias config='git --git-dir=/c/Users/tom/.cfg/ --work-tree=/c/Users/tom'
+alias config='git --git-dir=$HOME/.cfg/ --work-tree=$HOME/tom'
 
 # Horrid hack to be able to use WT with -here
 if [ "$(pwd)" = '/c/Windows/System32' ]; then

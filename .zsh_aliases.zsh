@@ -90,7 +90,6 @@ function d () {
     dirs -v | head -n 10
   fi
 }
-compdef _dirs d
 
 # List directory contents
 alias lsa='ls -lah'
