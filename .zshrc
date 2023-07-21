@@ -23,6 +23,11 @@ if [ -f ~/.zsh_aliases_private.zsh ]; then
 	source ~/.zsh_aliases_private.zsh
 fi
 
+# Load a custom non-VCS file if exists
+if [ -f ~/.zshrc_custom ]; then
+	source ~/.zshrc_custom
+fi
+
 # Theme - p10k submoduled
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
