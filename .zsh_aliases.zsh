@@ -50,17 +50,17 @@ add-zsh-hook preexec preexec_alias-finder
 
 function gcnv() {
 	if [ -z "$1" ]; then
-		echo 'no arg provided. fuck yourself'
+echo 'no arg provided. fuck yourself'
 	else
-		git commit --no-verify -m "$*"
+git commit --no-verify -m "$*"
 	fi
 }
 
 function gcdnv() {
 	if [ -z "$2" ]; then
-		echo 'not enough args provided. fuck yourself'
+echo 'not enough args provided. fuck yourself'
 	else
-		git commit --no-verify -m "$1" -m "$2"
+git commit --no-verify -m "$1" -m "$2"
 	fi
 }
 
@@ -96,29 +96,45 @@ alias lsa='ls -lah'
 alias l='ls -lah'
 alias ll='ls -lh'
 alias la='ls -lAh'
-alias docker-compose='docker compose'
 alias dbl='docker build'
-alias dcb='docker-compose build'
-alias dcdn='docker-compose down'
-alias dce='docker-compose exec'
 alias dcin='docker container inspect'
-alias dck='docker-compose kill'
-alias dcl='docker-compose logs'
-alias dclf='docker-compose logs -f'
 alias dcls='docker container ls'
 alias dclsa='docker container ls -a'
+alias dclf='docker compose logs -f'
 alias dco='docker compose'
-alias dcps='docker-compose ps'
-alias dcpull='docker-compose pull'
-alias dcr='docker-compose run'
-alias dcrestart='docker-compose restart'
-alias dcrm='docker-compose rm'
-alias dcstart='docker-compose start'
-alias dcstop='docker-compose stop'
-alias dcup='docker-compose up'
-alias dcupb='docker-compose up --build'
-alias dcupd='docker-compose up -d'
-alias dcupdb='docker-compose up -d --build'
+alias dcb='docker compose build'
+alias dce='docker compose exec'
+alias dck='docker compose kill'
+alias dcdn='docker compose down'
+alias dcl='docker compose logs'
+alias dcps='docker compose ps'
+alias dcpull='docker compose pull'
+alias dcr='docker compose run'
+alias dcrestart='docker compose restart'
+alias dcrm='docker compose rm'
+alias dcstart='docker compose start'
+alias dcstop='docker compose stop'
+alias dcup='docker compose up'
+alias dcupb='docker compose up --build'
+alias dcupd='docker compose up -d'
+alias dcupdb='docker compose up -d --build'
+alias dcprodo='docker compose -f docker-compose.yml -f docker-compose.prod.yml'
+alias dcprodb='docker compose -f docker-compose.yml -f docker-compose.prod.yml build'
+alias dcprode='docker compose -f docker-compose.yml -f docker-compose.prod.yml exec'
+alias dcprodk='docker compose -f docker-compose.yml -f docker-compose.prod.yml kill'
+alias dcproddn='docker compose -f docker-compose.yml -f docker-compose.prod.yml down'
+alias dcprodl='docker compose -f docker-compose.yml -f docker-compose.prod.yml logs'
+alias dcprodps='docker compose -f docker-compose.yml -f docker-compose.prod.yml ps'
+alias dcprodpull='docker compose -f docker-compose.yml -f docker-compose.prod.yml pull'
+alias dcprodr='docker compose -f docker-compose.yml -f docker-compose.prod.yml run'
+alias dcprodrestart='docker compose -f docker-compose.yml -f docker-compose.prod.yml restart'
+alias dcprodrm='docker compose -f docker-compose.yml -f docker-compose.prod.yml rm'
+alias dcprodstart='docker compose -f docker-compose.yml -f docker-compose.prod.yml start'
+alias dcprodstop='docker compose -f docker-compose.yml -f docker-compose.prod.yml stop'
+alias dcprodup='docker compose -f docker-compose.yml -f docker-compose.prod.yml up'
+alias dcprodupb='docker compose -f docker-compose.yml -f docker-compose.prod.yml up --build'
+alias dcprodupd='docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d'
+alias dcprodupdb='docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d --build'
 alias dib='docker image build'
 alias dii='docker image inspect'
 alias dils='docker image ls'
