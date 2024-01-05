@@ -1,6 +1,14 @@
 # This setup https://www.atlassian.com/git/tutorials/dotfiles
 alias config='git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
+export PATH=$HOME/bin:/usr/local/bin:$PATH:
+export ZSH=$HOME/.oh-my-zsh
+
+plugins=(git
+	tmux
+)
+source $ZSH/oh-my-zsh.sh
+
 # Horrid hack to be able to use WT with -here
 if [ "$(pwd)" = '/c/Windows/System32' ]; then
 	cd
