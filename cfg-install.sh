@@ -3,14 +3,7 @@
 # To exec use:
 # curl -Lks https://raw.githubusercontent.com/tsa96/dotfiles/main/cfg-install.sh | /bin/sh
 
-# Based on https://www.atlassian.com/git/tutorials/dotfiles
-
-rm cfg-install.sh # lol
-
-sudo apt -y install zsh
-
-git clone --bare https://github.com/tsa96/dotfiles.git "$HOME"/.cfg
-git clone https://github.com/romkatv/powerlevel10k "$HOME/powerlevel10k" # Hack, can't get submodules to work with this
+#git clone --bare https://github.com/tsa96/dotfiles.git "$HOME"/.cfg
 
 config() {
 	git --git-dir="$HOME"/.cfg/ --work-tree="$HOME"/ "$@"
