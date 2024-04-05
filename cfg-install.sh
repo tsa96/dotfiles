@@ -3,7 +3,7 @@
 # To exec use:
 # curl -Lks https://raw.githubusercontent.com/tsa96/dotfiles/main/cfg-install.sh | /bin/sh
 
-#git clone --bare https://github.com/tsa96/dotfiles.git "$HOME"/.cfg
+git clone --bare https://github.com/tsa96/dotfiles.git "$HOME"/.cfg
 
 config() {
 	git --git-dir="$HOME"/.cfg/ --work-tree="$HOME"/ "$@"
