@@ -381,3 +381,5 @@ alias nxs="nx serve"
 alias nxfa="nx format --all"
 alias nxmany="nx run-many -t"
 alias nxr="nx reset"
+
+alias lintnformat="nx run-many -t lint --fix && nx format"
